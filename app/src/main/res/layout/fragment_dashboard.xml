@@ -1,0 +1,292 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="90sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/square_border"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:layout_marginTop="15sp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5sp"
+                                android:background="@drawable/setting" />
+
+                            <TextView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginRight="0dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/badge"
+                                android:gravity="center"
+                                android:minHeight="17sp"
+                                android:minWidth="17sp"
+                                android:padding="2dp"
+                                android:paddingBottom="1dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:scaleType="fitStart"
+                                android:text="10"
+                                android:textColor="#ffffffff"
+                                android:textSize="10sp"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="@string/order_recieved"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="90sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/square_border"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:layout_marginTop="15sp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5sp"
+                                android:background="@drawable/order_completed" />
+
+                            <TextView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginRight="0dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/badge"
+                                android:gravity="center"
+                                android:minHeight="17sp"
+                                android:minWidth="17sp"
+                                android:padding="2dp"
+                                android:paddingBottom="1dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:scaleType="fitStart"
+                                android:text="10"
+                                android:textColor="#ffffffff"
+                                android:textSize="10sp"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="@string/completed"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="90sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/square_border"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="45sp"
+                            android:layout_height="45sp"
+                            android:layout_marginTop="15sp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5sp"
+                                android:background="@drawable/order_pending" />
+
+                            <TextView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginRight="0dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/badge"
+                                android:gravity="center"
+                                android:minHeight="17sp"
+                                android:minWidth="17sp"
+                                android:padding="2dp"
+                                android:paddingBottom="1dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:scaleType="fitStart"
+                                android:text="10"
+                                android:textColor="#ffffffff"
+                                android:textSize="10sp"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="@string/pending"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/todayorderstatsus"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/drop_down" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rcvTodayOrderStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/todayinvoicelist"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/drop_down" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rcvTodayINvoiceList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>

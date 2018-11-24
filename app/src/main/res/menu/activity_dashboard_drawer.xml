@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/dashboard">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+    </group>
+    <group android:id="@+id/customer">
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/customer"
+            android:title="Customer" />
+    </group>
+    <group android:id="@+id/customerService">
+        <item
+            android:id="@+id/nav_customer_service"
+            android:icon="@drawable/customer"
+            android:title="Customer Service" />
+    </group>
+    <!--<group android:id="@+id/order_reveive">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_order_reveive"-->
+            <!--android:icon="@drawable/order_received"-->
+            <!--android:title="Order Received" />-->
+    <!--</group>-->
+    <group android:id="@+id/invoice">
+        <item
+            android:id="@+id/nav_invoice"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Invoice" />
+    </group>
+    <group android:id="@+id/report">
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Report" />
+    </group>
+    <group android:id="@+id/change_password">
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_password"
+            android:title="Change Password" />
+    </group>
+    <group android:id="@+id/logout">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

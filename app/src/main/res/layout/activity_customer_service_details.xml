@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:theme="@style/ToolbarTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Job Card Number"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/jobCardNumber"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Assigned To"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/assignedTo"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Estimated Service Payment"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/estmatedServicePayment"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Priority | Delivery Period"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/priorityPeriod"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Service Type"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/serviceType"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Issue"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/issue"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Complain Type"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/complainType"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Service Status"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/serviceStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2sp"
+                    android:paddingBottom="2sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:textSize="@dimen/text_heading_three" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Customer ID"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/customerId"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Customer Name"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Customer Email"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/customerEmail"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Customer Mobile"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/customerMobile"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Customer Address"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/customerAddress"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Created On"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/createdOn"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:weightSum="5.5">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:paddingLeft="5sp"
+                android:text="Modified On"
+                android:textSize="@dimen/text_heading_three"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text=":"
+                android:textSize="@dimen/text_heading_three" />
+
+            <TextView
+                android:id="@+id/modifiedOn"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_heading_three" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
