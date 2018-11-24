@@ -2,8 +2,8 @@ package com.alysiancreative.bonnindia.WebService;
 
 public class WebAddress {
 
-//    public static String bonnIndiaUrl = "http://bonnindia.com/bonnIndia_dev/API/";
-    public static String bonnIndiaUrl = "http://bonnindia.com/API/";
+    public static String bonnIndiaUrl = "http://bonnindia.com/bonnIndia_dev/API/";
+//    public static String bonnIndiaUrl = "http://bonnindia.com/API/";
 
     public static String getLoginUrl()
     {
