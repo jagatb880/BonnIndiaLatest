@@ -5,10 +5,9 @@ public class TodayOrderStatus {
     private String customerName;
     private String deliveryDate;
 
-    public TodayOrderStatus(String itemName, String customerName, String deliveryDate, String assignTo, String payment, String type) {
+    public TodayOrderStatus(String itemName, String customerName, String assignTo, String payment, String type) {
         this.itemName = itemName;
         this.customerName = customerName;
-        this.deliveryDate = deliveryDate;
         this.assignTo = assignTo;
         this.payment = payment;
         this.type = type;
@@ -40,14 +39,6 @@ public class TodayOrderStatus {
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
-    }
-
-    public String getDeliveryDate() {
-        return deliveryDate;
-    }
-
-    public void setDeliveryDate(String deliveryDate) {
-        this.deliveryDate = deliveryDate;
     }
 
     public String getAssignTo() {

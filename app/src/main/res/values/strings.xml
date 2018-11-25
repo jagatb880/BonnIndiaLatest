@@ -14,9 +14,9 @@
     <string name="nav_invoice">Invoice</string>
     <string name="nav_order_reveive">Order Recieved</string>
     <string name="nav_change_password">Change Password</string>
-    <string name="completed">COMPLETED</string>
-    <string name="order_recieved">ORDER RECIEVED</string>
-    <string name="pending">PENDING</string>
+    <string name="completed">Completed</string>
+    <string name="complain_recieved">Complain Received</string>
+    <string name="pending">Pending</string>
     <string name="title_customer_details">Customer Details</string>
     <string name="title_customer_service_details">Customer Service Details</string>
     <string name="title_invoice_details">Invoice Details</string>

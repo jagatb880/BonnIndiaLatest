@@ -46,7 +46,6 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
              TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
              headerViewholder.txtItemName.setText(todayOrderStatus.getItemName());
              headerViewholder.txtCustomerName.setText(todayOrderStatus.getCustomerName());
-             headerViewholder.txtDeliveryDate.setText(todayOrderStatus.getDeliveryDate());
              headerViewholder.txtAssignTo.setText(todayOrderStatus.getAssignTo());
              headerViewholder.txtPayment.setText(todayOrderStatus.getPayment());
          }
@@ -55,7 +54,6 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
             todaysOderNormalViewholder.txtItemName.setText(todayOrderStatus.getItemName());
             todaysOderNormalViewholder.txtCustomerName.setText(todayOrderStatus.getCustomerName());
-            todaysOderNormalViewholder.txtDeliveryDate.setText(todayOrderStatus.getDeliveryDate());
             todaysOderNormalViewholder.txtAssignTo.setText(todayOrderStatus.getAssignTo());
             todaysOderNormalViewholder.txtPayment.setText(todayOrderStatus.getPayment());
         }
@@ -83,7 +81,6 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             super(itemView);
             txtItemName = itemView.findViewById(R.id.txtItemName);
             txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
-            txtDeliveryDate = itemView.findViewById(R.id.txtDeliveryDate);
             txtAssignTo = itemView.findViewById(R.id.txtAssignTo);
             txtPayment = itemView.findViewById(R.id.txtPayment);
         }
@@ -94,7 +91,6 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             super(itemView);
             txtItemName = itemView.findViewById(R.id.txtItemName);
             txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
-            txtDeliveryDate = itemView.findViewById(R.id.txtDeliveryDate);
             txtAssignTo = itemView.findViewById(R.id.txtAssignTo);
             txtPayment = itemView.findViewById(R.id.txtPayment);
         }

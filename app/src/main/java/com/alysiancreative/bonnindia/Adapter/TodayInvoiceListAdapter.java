@@ -44,27 +44,18 @@ public class TodayInvoiceListAdapter extends RecyclerView.Adapter<RecyclerView.V
         if (viewHolder instanceof TodaysInvoiceHeaderViewholder){
             TodaysInvoiceHeaderViewholder todaysInvoiceHeaderViewholder = (TodaysInvoiceHeaderViewholder) viewHolder;
             TodayInvoiceList todayInvoiceList =invoiceLists.get(i);
-            todaysInvoiceHeaderViewholder.txtItemName.setText(todayInvoiceList.getInvoice());
-            todaysInvoiceHeaderViewholder.txtCustomerName.setText(todayInvoiceList.getDescription());
-            todaysInvoiceHeaderViewholder.txtDeliveryDate.setText(todayInvoiceList.getAmount());
-            todaysInvoiceHeaderViewholder.txtAssignTo.setText(todayInvoiceList.getStatus());
-            todaysInvoiceHeaderViewholder.txtPayment.setText(todayInvoiceList.getIssue());
+            todaysInvoiceHeaderViewholder.txtInvoice.setText(todayInvoiceList.getInvoice());
+            todaysInvoiceHeaderViewholder.txtAmount.setText(todayInvoiceList.getAmount());
+            todaysInvoiceHeaderViewholder.txtDiscount.setText(todayInvoiceList.getDiscount());
+            todaysInvoiceHeaderViewholder.txtTax.setText(todayInvoiceList.getTax());
         }
         if (viewHolder instanceof TodaysInvoicListNormalViewholder){
             TodaysInvoicListNormalViewholder todaysInvoicListNormalViewholder = (TodaysInvoicListNormalViewholder) viewHolder;
             TodayInvoiceList todayOrderStatus =invoiceLists.get(i);
-            todaysInvoicListNormalViewholder.txtItemName.setText(todayOrderStatus.getInvoice());
-            todaysInvoicListNormalViewholder.txtCustomerName.setText(todayOrderStatus.getDescription());
-            todaysInvoicListNormalViewholder.txtDeliveryDate.setText(todayOrderStatus.getAmount());
-            todaysInvoicListNormalViewholder.txtAssignTo.setText(todayOrderStatus.getStatus());
-            todaysInvoicListNormalViewholder.txtPayment.setText(todayOrderStatus.getIssue());
-            if (todayOrderStatus.getStatus().equals("0")){
-                todaysInvoicListNormalViewholder.txtAssignTo.setText("Paid");
-                todaysInvoicListNormalViewholder.txtAssignTo.setTextColor(context.getResources().getColor(R.color.greenColor));
-            }else {
-                todaysInvoicListNormalViewholder.txtAssignTo.setText("Un-Paid");
-                todaysInvoicListNormalViewholder.txtAssignTo.setTextColor(context.getResources().getColor(R.color.colorAccent));
-            }
+            todaysInvoicListNormalViewholder.txtInvoice.setText(todayOrderStatus.getInvoice());
+            todaysInvoicListNormalViewholder.txtAmount.setText(todayOrderStatus.getAmount());
+            todaysInvoicListNormalViewholder.txtDiscount.setText(todayOrderStatus.getDiscount());
+            todaysInvoicListNormalViewholder.txtTax.setText(todayOrderStatus.getTax());
         }
     }
 
@@ -85,26 +76,23 @@ public class TodayInvoiceListAdapter extends RecyclerView.Adapter<RecyclerView.V
     }
 
     public class TodaysInvoiceHeaderViewholder extends RecyclerView.ViewHolder{
-        TextView txtItemName,txtCustomerName,txtDeliveryDate,txtAssignTo,txtPayment,txtView;
+        TextView txtInvoice, txtAmount, txtDiscount, txtTax;
         public TodaysInvoiceHeaderViewholder(@NonNull View itemView) {
             super(itemView);
-            txtItemName = itemView.findViewById(R.id.txtItemName);
-            txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
-            txtDeliveryDate = itemView.findViewById(R.id.txtDeliveryDate);
-            txtAssignTo = itemView.findViewById(R.id.txtAssignTo);
-            txtPayment = itemView.findViewById(R.id.txtPayment);
-            txtView = itemView.findViewById(R.id.txtView);
+            txtInvoice = itemView.findViewById(R.id.txtInvoice);
+            txtAmount = itemView.findViewById(R.id.txtAmount);
+            txtDiscount = itemView.findViewById(R.id.txtDiscount);
+            txtTax = itemView.findViewById(R.id.txtTax);
         }
     }
     public class TodaysInvoicListNormalViewholder  extends RecyclerView.ViewHolder{
-        TextView txtItemName,txtCustomerName,txtDeliveryDate,txtAssignTo,txtPayment;
+        TextView txtInvoice, txtAmount, txtDiscount, txtTax;
         public TodaysInvoicListNormalViewholder(@NonNull View itemView) {
             super(itemView);
-            txtItemName = itemView.findViewById(R.id.txtItemName);
-            txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
-            txtDeliveryDate = itemView.findViewById(R.id.txtDeliveryDate);
-            txtAssignTo = itemView.findViewById(R.id.txtAssignTo);
-            txtPayment = itemView.findViewById(R.id.txtPayment);
+            txtInvoice = itemView.findViewById(R.id.txtInvoice);
+            txtAmount = itemView.findViewById(R.id.txtAmount);
+            txtDiscount = itemView.findViewById(R.id.txtDiscount);
+            txtTax = itemView.findViewById(R.id.txtTax);
         }
     }
 }

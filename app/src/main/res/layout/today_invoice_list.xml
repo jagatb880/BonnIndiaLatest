@@ -3,53 +3,38 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:weightSum="1"
+    android:weightSum="10"
     android:padding="8dp">
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.166"
+        android:layout_weight="2.5"
         android:gravity="center"
         android:textSize="11sp"
-        android:id="@+id/txtItemName"
+        android:id="@+id/txtInvoice"
         android:fontFamily="@font/roboto_regular"/>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.188"
+        android:layout_weight="2.5"
         android:gravity="center"
         android:textSize="11sp"
-        android:id="@+id/txtCustomerName"
+        android:id="@+id/txtAmount"
         android:fontFamily="@font/roboto_regular"/>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.166"
+        android:layout_weight="2.5"
         android:gravity="center"
         android:textSize="11sp"
-        android:id="@+id/txtDeliveryDate"
+        android:id="@+id/txtDiscount"
         android:fontFamily="@font/roboto_regular"/>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.166"
+        android:layout_weight="2.5"
         android:gravity="center"
         android:textSize="11sp"
-        android:id="@+id/txtAssignTo"
+        android:id="@+id/txtTax"
         android:fontFamily="@font/roboto_regular"/>
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.144"
-        android:gravity="center"
-        android:textSize="11sp"
-        android:id="@+id/txtPayment"
-        android:fontFamily="@font/roboto_regular"/>
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_weight="0.166"
-        android:paddingLeft="22sp"
-        android:paddingRight="22sp"
-        android:src="@drawable/invoice"/>
 </LinearLayout>
