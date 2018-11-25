@@ -215,6 +215,9 @@ public class InvoiceFragment extends Fragment implements SwipeRefreshLayout.OnRe
 
     @Override
     public void onRefresh() {
+        invoiceLists.removeAll(invoiceLists);
+        adapter.notifyDataSetChanged();
+        recyclerView.setAdapter(adapter);
         getData();
     }
 

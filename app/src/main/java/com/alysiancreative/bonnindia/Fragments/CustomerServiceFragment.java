@@ -209,6 +209,9 @@ public class CustomerServiceFragment extends Fragment implements SwipeRefreshLay
 
     @Override
     public void onRefresh() {
+        customerServiceLists.removeAll(customerServiceLists);
+        adapter.notifyDataSetChanged();
+        recyclerView.setAdapter(adapter);
         getData();
     }
 
