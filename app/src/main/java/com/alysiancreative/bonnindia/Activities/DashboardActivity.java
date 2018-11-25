@@ -22,6 +22,7 @@ import com.alysiancreative.bonnindia.Fragments.ChangePasswordFragment;
 import com.alysiancreative.bonnindia.Fragments.CustomerFragment;
 import com.alysiancreative.bonnindia.Fragments.CustomerServiceFragment;
 import com.alysiancreative.bonnindia.Fragments.DashboardFragment;
+import com.alysiancreative.bonnindia.Fragments.InvoiceFragment;
 import com.alysiancreative.bonnindia.Fragments.OrderRecievedFragment;
 import com.alysiancreative.bonnindia.R;
 import com.alysiancreative.bonnindia.Utilities.BadgeUtils;
@@ -107,11 +108,11 @@ public class DashboardActivity extends AppCompatActivity
                     toolbar.setTitle(getString(R.string.nav_customer_service));
                 }
 
-//                if (menuItem.getItemId() == R.id.nav_order_reveive) {
-//                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-//                    fragmentTransaction.replace(R.id.containerView, new OrderRecievedFragment()).commit();
-//                    toolbar.setTitle(getString(R.string.nav_order_reveive));
-//                }
+                if (menuItem.getItemId() == R.id.nav_invoice) {
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView, new InvoiceFragment()).commit();
+                    toolbar.setTitle(getString(R.string.nav_invoice));
+                }
 
 //                if (menuItem.getItemId() == R.id.nav_order_reveive) {
 //                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();

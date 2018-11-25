@@ -53,8 +53,6 @@ public class CustomerFragment extends Fragment implements SwipeRefreshLayout.OnR
     private RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
-    JSONObject logInJsonObj;
-    String getListCustomerUrl;
     SharedPreferences sharedPreferences;;
     private String token;
 
@@ -117,7 +115,7 @@ public class CustomerFragment extends Fragment implements SwipeRefreshLayout.OnR
         //Creating a json array request
 
         //if everything is fine
-        Log.d("website: ", ">>> " + WebAddress.getLoginUrl());
+        Log.d("website: ", ">>> " + WebAddress.getListCustomerUrl());
         StringRequest stringRequest = new StringRequest(Request.Method.POST, WebAddress.getListCustomerUrl(),
                 new Response.Listener<String>() {
                     @Override

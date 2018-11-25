@@ -46,8 +46,8 @@ public class CustomerServiceAdapter extends RecyclerView.Adapter<CustomerService
             holder.serialNo.setText((String.valueOf(customerServiceList.getSerialNo())));
 
             holder.customerName.setText(customerServiceList.getCustomerName());
-            holder.assignedTo.setText(customerServiceList.getAssignTo());
-            holder.payment.setText(String.valueOf(customerServiceList.getPayment()));
+            holder.assignedTo.setText("Assign To #"+customerServiceList.getAssignTo());
+            holder.payment.setText("Payment #"+String.valueOf(customerServiceList.getPayment()));
             holder.status.setText(customerServiceList.getStatus());
             switch (holder.status.getText().toString()) {
                 case "New":
@@ -138,8 +138,8 @@ public class CustomerServiceAdapter extends RecyclerView.Adapter<CustomerService
                 case R.id.viewDetails:
                     Intent intent = new Intent(view.getContext(),CustomerServiceDetailsActivity.class);
                     intent.putExtra("JOBCARDNUMBER",complainId);
-                    intent.putExtra("ASSIGNEDTO",assignedTo.getText().toString());
-                    intent.putExtra("ESTIMATEDSERVICEPAYMENT",payment.getText().toString());
+                    intent.putExtra("ASSIGNEDTO",assignedTo.getText().toString().substring(11));
+                    intent.putExtra("ESTIMATEDSERVICEPAYMENT",payment.getText().toString().substring(9));
                     intent.putExtra("PRIORITYPERIOD",priority);
                     intent.putExtra("SERVICETYPE",serviceType);
                     intent.putExtra("ISSUE",issue);

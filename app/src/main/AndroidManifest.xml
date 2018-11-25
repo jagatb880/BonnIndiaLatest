@@ -55,6 +55,12 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".Activities.InvoiceDetailsActivity"
+            android:label="@string/title_invoice_details"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

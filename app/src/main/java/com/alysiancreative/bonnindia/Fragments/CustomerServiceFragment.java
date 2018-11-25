@@ -50,14 +50,12 @@ public class CustomerServiceFragment extends Fragment implements SwipeRefreshLay
     private RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;
     private RecyclerView.Adapter adapter;
-    JSONObject logInJsonObj;
-    String getListCustomerServiceUrl;
     SharedPreferences sharedPreferences;;
     private String token;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle b) {
 
-        view = inflater.inflate(R.layout.fragment_customer_service, container, false);
+        view = inflater.inflate(R.layout.fragment_customer, container, false);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         token = sharedPreferences.getString("TOKEN", "");
@@ -114,7 +112,7 @@ public class CustomerServiceFragment extends Fragment implements SwipeRefreshLay
         //Creating a json array request
 
         //if everything is fine
-        Log.d("website: ", ">>> " + WebAddress.getLoginUrl());
+        Log.d("website: ", ">>> " + WebAddress.getListCustomerServiceUrl());
         StringRequest stringRequest = new StringRequest(Request.Method.POST, WebAddress.getListCustomerServiceUrl(),
                 new Response.Listener<String>() {
                     @Override
