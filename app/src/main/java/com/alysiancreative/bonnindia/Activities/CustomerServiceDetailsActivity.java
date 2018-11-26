@@ -50,12 +50,14 @@ public class CustomerServiceDetailsActivity extends AppCompatActivity {
             case "New":
                 serviceStatus.setBackgroundColor(this.getResources().getColor(R.color.red));
                 break;
+            case "In Progress":
             case "In progress":
                 serviceStatus.setBackgroundColor(this.getResources().getColor(R.color.yellow));
                 break;
             case "Done":
                 serviceStatus.setBackgroundColor(this.getResources().getColor(R.color.green));
                 break;
+            case "Closed":
             case "closed":
                 serviceStatus.setBackgroundColor(this.getResources().getColor(R.color.darkgrey));
                 break;

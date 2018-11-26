@@ -44,18 +44,20 @@ public class TodayInvoiceListAdapter extends RecyclerView.Adapter<RecyclerView.V
         if (viewHolder instanceof TodaysInvoiceHeaderViewholder){
             TodaysInvoiceHeaderViewholder todaysInvoiceHeaderViewholder = (TodaysInvoiceHeaderViewholder) viewHolder;
             TodayInvoiceList todayInvoiceList =invoiceLists.get(i);
-            todaysInvoiceHeaderViewholder.txtInvoice.setText(todayInvoiceList.getInvoice());
-            todaysInvoiceHeaderViewholder.txtAmount.setText(todayInvoiceList.getAmount());
-            todaysInvoiceHeaderViewholder.txtDiscount.setText(todayInvoiceList.getDiscount());
-            todaysInvoiceHeaderViewholder.txtTax.setText(todayInvoiceList.getTax());
+            todaysInvoiceHeaderViewholder.txtBillNo.setText(todayInvoiceList.getBillNo());
+            todaysInvoiceHeaderViewholder.txtTotalAmount.setText(todayInvoiceList.getTotalAmount());
+            todaysInvoiceHeaderViewholder.txtTotalDiscount.setText(todayInvoiceList.getTotalDiscount());
+            todaysInvoiceHeaderViewholder.txtTotalTax.setText(todayInvoiceList.getTotalTax());
+            todaysInvoiceHeaderViewholder.txtBillAmount.setText(todayInvoiceList.getBillAmount());
         }
         if (viewHolder instanceof TodaysInvoicListNormalViewholder){
             TodaysInvoicListNormalViewholder todaysInvoicListNormalViewholder = (TodaysInvoicListNormalViewholder) viewHolder;
             TodayInvoiceList todayOrderStatus =invoiceLists.get(i);
-            todaysInvoicListNormalViewholder.txtInvoice.setText(todayOrderStatus.getInvoice());
-            todaysInvoicListNormalViewholder.txtAmount.setText(todayOrderStatus.getAmount());
-            todaysInvoicListNormalViewholder.txtDiscount.setText(todayOrderStatus.getDiscount());
-            todaysInvoicListNormalViewholder.txtTax.setText(todayOrderStatus.getTax());
+            todaysInvoicListNormalViewholder.txtBillNo.setText(todayOrderStatus.getBillNo());
+            todaysInvoicListNormalViewholder.txtTotalAmount.setText(todayOrderStatus.getTotalAmount());
+            todaysInvoicListNormalViewholder.txtTotalDiscount.setText(todayOrderStatus.getTotalDiscount());
+            todaysInvoicListNormalViewholder.txtTotalTax.setText(todayOrderStatus.getTotalTax());
+            todaysInvoicListNormalViewholder.txtBillAmount.setText(todayOrderStatus.getBillAmount());
         }
     }
 
@@ -66,33 +68,35 @@ public class TodayInvoiceListAdapter extends RecyclerView.Adapter<RecyclerView.V
 
     @Override
     public int getItemViewType(int position) {
-        //return super.getItemViewType(position);
-        TodayInvoiceList status = invoiceLists.get(position);
-        if (status.getType().equals("0")){
-            return TYPE_HEADER;
-        }else {
-            return TYPE_NORMAL;
-        }
+        return super.getItemViewType(position);
+//        TodayInvoiceList status = invoiceLists.get(position);
+//        if (status.getS().equals("0")){
+//            return TYPE_HEADER;
+//        }else {
+//            return TYPE_NORMAL;
+//        }
     }
 
     public class TodaysInvoiceHeaderViewholder extends RecyclerView.ViewHolder{
-        TextView txtInvoice, txtAmount, txtDiscount, txtTax;
+        TextView txtBillNo, txtTotalAmount, txtTotalDiscount, txtTotalTax, txtBillAmount;
         public TodaysInvoiceHeaderViewholder(@NonNull View itemView) {
             super(itemView);
-            txtInvoice = itemView.findViewById(R.id.txtInvoice);
-            txtAmount = itemView.findViewById(R.id.txtAmount);
-            txtDiscount = itemView.findViewById(R.id.txtDiscount);
-            txtTax = itemView.findViewById(R.id.txtTax);
+            txtBillNo = itemView.findViewById(R.id.txtBillNo);
+            txtTotalAmount = itemView.findViewById(R.id.txtTotalAmount);
+            txtTotalDiscount = itemView.findViewById(R.id.txtTotalDiscount);
+            txtTotalTax = itemView.findViewById(R.id.txtTotalTax);
+            txtBillAmount = itemView.findViewById(R.id.txtBillAmount);
         }
     }
     public class TodaysInvoicListNormalViewholder  extends RecyclerView.ViewHolder{
-        TextView txtInvoice, txtAmount, txtDiscount, txtTax;
+        TextView txtBillNo, txtTotalAmount, txtTotalDiscount, txtTotalTax, txtBillAmount;
         public TodaysInvoicListNormalViewholder(@NonNull View itemView) {
             super(itemView);
-            txtInvoice = itemView.findViewById(R.id.txtInvoice);
-            txtAmount = itemView.findViewById(R.id.txtAmount);
-            txtDiscount = itemView.findViewById(R.id.txtDiscount);
-            txtTax = itemView.findViewById(R.id.txtTax);
+            txtBillNo = itemView.findViewById(R.id.txtBillNo);
+            txtTotalAmount = itemView.findViewById(R.id.txtTotalAmount);
+            txtTotalDiscount = itemView.findViewById(R.id.txtTotalDiscount);
+            txtTotalTax = itemView.findViewById(R.id.txtTotalTax);
+            txtBillAmount = itemView.findViewById(R.id.txtBillAmount);
         }
     }
 }

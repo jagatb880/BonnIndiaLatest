@@ -1,59 +1,60 @@
 package com.alysiancreative.bonnindia.ModelClass;
 
 public class TodayInvoiceList {
-    private String invoice;
 
-    public String getInvoice() {
-        return invoice;
+    private String billNo;
+    private String totalAmount;
+    private String totalDiscount;
+    private String totalTax;
+
+    public String getBillAmount() {
+        return billAmount;
     }
 
-    public void setInvoice(String invoice) {
-        this.invoice = invoice;
+    public void setBillAmount(String billAmount) {
+        this.billAmount = billAmount;
     }
 
-    public String getAmount() {
-        return amount;
+    private String billAmount;
+
+    public String getBillNo() {
+        return billNo;
     }
 
-    public void setAmount(String amount) {
-        this.amount = amount;
+    public void setBillNo(String billNo) {
+        this.billNo = billNo;
     }
 
-    public String getDiscount() {
-        return discount;
+    public String getTotalAmount() {
+        return totalAmount;
     }
 
-    public void setDiscount(String discount) {
-        this.discount = discount;
+    public void setTotalAmount(String totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
-    public String getTax() {
-        return tax;
+    public String getTotalDiscount() {
+        return totalDiscount;
     }
 
-    public void setTax(String tax) {
-        this.tax = tax;
+    public void setTotalDiscount(String totalDiscount) {
+        this.totalDiscount = totalDiscount;
     }
 
-    public String getType() {
-        return type;
+    public String getTotalTax() {
+        return totalTax;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTotalTax(String totalTax) {
+        this.totalTax = totalTax;
     }
 
-    private String amount;
-    private String discount;
-    private String tax;
-    private String type;
-
-    public TodayInvoiceList(String invoice, String amount, String discount, String tax, String type) {
-        this.invoice = invoice;
-        this.amount = amount;
-        this.discount = discount;
-        this.tax = tax;
-        this.type = type;
+    public TodayInvoiceList(String billNo, String totalAmount, String totalDiscount, String totalTax, String billAmount) {
+        this.billNo = billNo;
+        this.totalAmount = totalAmount;
+        this.totalDiscount = totalDiscount;
+        this.totalTax = totalTax;
+        this.billAmount = billAmount;
     }
 
 }

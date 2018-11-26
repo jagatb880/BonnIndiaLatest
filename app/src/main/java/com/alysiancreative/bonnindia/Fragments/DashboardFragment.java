@@ -57,10 +57,10 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         rcvTodayOrderStatus.setLayoutManager(new LinearLayoutManager(getActivity()));
         rcvTodayOrderStatus.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
         todayOrderStatusArrayList = new ArrayList<>();
-        todayOrderStatusArrayList.add(new TodayOrderStatus("Item","Customer","Assign To","Payment","0"));
-        todayOrderStatusArrayList.add(new TodayOrderStatus("Fan","Santosh","Nayak","Rs 250.00","1"));
-        todayOrderStatusArrayList.add(new TodayOrderStatus("Fan","Santosh","Nayak","Rs 250.00","1"));
-        todayOrderStatusArrayList.add(new TodayOrderStatus("Fan","Santosh","Nayak","Rs 250.00","1"));
+        todayOrderStatusArrayList.add(new TodayOrderStatus("Job Card","Assign To","Payment","Status"));
+        todayOrderStatusArrayList.add(new TodayOrderStatus("#040043","Santosh","Rs 250.00","New"));
+        todayOrderStatusArrayList.add(new TodayOrderStatus("#040043","Santosh","Rs 250.00","Closed"));
+        todayOrderStatusArrayList.add(new TodayOrderStatus("#040043","Santosh","Rs 250.00","In progress"));
         /*todayOrderStatusArrayList.add(new TodayOrderStatus("Fan","Santosh","10-05-18","#0123","Rs 250.00","1"));
         todayOrderStatusArrayList.add(new TodayOrderStatus("Fan","Santosh","10-05-18","#0123","Rs 250.00","1"));*/
         todayOrderAdapter = new TodayOrderAdapter(getActivity(),todayOrderStatusArrayList);
@@ -70,10 +70,10 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         rcvTodayINvoiceList.setLayoutManager(new LinearLayoutManager(getActivity()));
         rcvTodayINvoiceList.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.VERTICAL));
         invoiceLists = new ArrayList<>();
-        invoiceLists.add(new TodayInvoiceList("Invoice","Amount","Discount","Tax","0"));
-        invoiceLists.add(new TodayInvoiceList("#1001","Rs 1080.00","Rs 50","Rs 100.00","1"));
-        invoiceLists.add(new TodayInvoiceList("#1001","Rs 1080.00","Rs 50","Rs 100.00","1"));
-        invoiceLists.add(new TodayInvoiceList("#1001","Rs 1080.00","Rs 50","Rs 100.00","1"));
+        invoiceLists.add(new TodayInvoiceList("Bill No","Total Amount","Total Discount","Total Tax","Bill Amount"));
+        invoiceLists.add(new TodayInvoiceList("#1001","Rs 1080.00","Rs 50","Rs 100.00","Rs 100.00"));
+        invoiceLists.add(new TodayInvoiceList("#1001","Rs 1080.00","Rs 50","Rs 100.00","Rs 100.00"));
+        invoiceLists.add(new TodayInvoiceList("#1001","Rs 1080.00","Rs 50","Rs 100.00","Rs 100.00"));
         todayInvoiceListAdapter=new TodayInvoiceListAdapter(getActivity(),invoiceLists);
         rcvTodayINvoiceList.setAdapter(todayInvoiceListAdapter);
         return view;

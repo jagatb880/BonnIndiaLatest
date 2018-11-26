@@ -53,12 +53,14 @@ public class CustomerServiceAdapter extends RecyclerView.Adapter<CustomerService
                 case "New":
                     holder.status.setBackgroundColor(context.getResources().getColor(R.color.red));
                     break;
+                case "In Progress":
                 case "In progress":
                     holder.status.setBackgroundColor(context.getResources().getColor(R.color.yellow));
                     break;
                 case "Done":
                     holder.status.setBackgroundColor(context.getResources().getColor(R.color.green));
                     break;
+                case "Closed":
                 case "closed":
                     holder.status.setBackgroundColor(context.getResources().getColor(R.color.darkgrey));
                     break;

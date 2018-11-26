@@ -44,18 +44,18 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
          if (viewHolder instanceof TodaysOrdrHeaderViewholder){
              TodaysOrdrHeaderViewholder headerViewholder = (TodaysOrdrHeaderViewholder) viewHolder;
              TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
-             headerViewholder.txtItemName.setText(todayOrderStatus.getItemName());
-             headerViewholder.txtCustomerName.setText(todayOrderStatus.getCustomerName());
+             headerViewholder.txtJobCard.setText(todayOrderStatus.getJobCard());
              headerViewholder.txtAssignTo.setText(todayOrderStatus.getAssignTo());
              headerViewholder.txtPayment.setText(todayOrderStatus.getPayment());
+             headerViewholder.txtStatus.setText(todayOrderStatus.getStatus());
          }
         if (viewHolder instanceof TodaysOderNormalViewholder){
             TodaysOderNormalViewholder todaysOderNormalViewholder = (TodaysOderNormalViewholder) viewHolder;
             TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
-            todaysOderNormalViewholder.txtItemName.setText(todayOrderStatus.getItemName());
-            todaysOderNormalViewholder.txtCustomerName.setText(todayOrderStatus.getCustomerName());
+            todaysOderNormalViewholder.txtJobCard.setText(todayOrderStatus.getJobCard());
             todaysOderNormalViewholder.txtAssignTo.setText(todayOrderStatus.getAssignTo());
             todaysOderNormalViewholder.txtPayment.setText(todayOrderStatus.getPayment());
+            todaysOderNormalViewholder.txtStatus.setText(todayOrderStatus.getStatus());
         }
     }
 
@@ -66,33 +66,33 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     @Override
     public int getItemViewType(int position) {
-        //return super.getItemViewType(position);
-        TodayOrderStatus status = orderStatusArrayList.get(position);
-        if (status.getType().equals("0")){
-            return TYPE_HEADER;
-        }else {
-            return TYPE_NORMAL;
-        }
+        return super.getItemViewType(position);
+//        TodayOrderStatus status = orderStatusArrayList.get(position);
+//        if (status.getType().equals("0")){
+//            return TYPE_HEADER;
+//        }else {
+//            return TYPE_NORMAL;
+//        }
     }
 
     public class TodaysOrdrHeaderViewholder extends RecyclerView.ViewHolder{
-        TextView txtItemName,txtCustomerName,txtDeliveryDate,txtAssignTo,txtPayment;
+        TextView txtJobCard, txtAssignTo, txtPayment, txtStatus;
         public TodaysOrdrHeaderViewholder(@NonNull View itemView) {
             super(itemView);
-            txtItemName = itemView.findViewById(R.id.txtItemName);
-            txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
+            txtJobCard = itemView.findViewById(R.id.txtJobCard);
             txtAssignTo = itemView.findViewById(R.id.txtAssignTo);
             txtPayment = itemView.findViewById(R.id.txtPayment);
+            txtStatus = itemView.findViewById(R.id.txtStatus);
         }
     }
     public class TodaysOderNormalViewholder  extends RecyclerView.ViewHolder{
-        TextView txtItemName,txtCustomerName,txtDeliveryDate,txtAssignTo,txtPayment;
+        TextView txtJobCard, txtAssignTo, txtPayment, txtStatus;
         public TodaysOderNormalViewholder(@NonNull View itemView) {
             super(itemView);
-            txtItemName = itemView.findViewById(R.id.txtItemName);
-            txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
+            txtJobCard = itemView.findViewById(R.id.txtJobCard);
             txtAssignTo = itemView.findViewById(R.id.txtAssignTo);
             txtPayment = itemView.findViewById(R.id.txtPayment);
+            txtStatus = itemView.findViewById(R.id.txtStatus);
         }
     }
 }

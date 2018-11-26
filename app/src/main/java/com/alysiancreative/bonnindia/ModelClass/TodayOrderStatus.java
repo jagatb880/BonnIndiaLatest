@@ -1,44 +1,18 @@
 package com.alysiancreative.bonnindia.ModelClass;
 
 public class TodayOrderStatus {
-    private String itemName;
-    private String customerName;
-    private String deliveryDate;
 
-    public TodayOrderStatus(String itemName, String customerName, String assignTo, String payment, String type) {
-        this.itemName = itemName;
-        this.customerName = customerName;
-        this.assignTo = assignTo;
-        this.payment = payment;
-        this.type = type;
-    }
-
+    private String jobCard;
     private String assignTo;
     private String payment;
-    private String type;
+    private String status;
 
-    public String getType() {
-        return type;
+    public String getJobCard() {
+        return jobCard;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getItemName() {
-        return itemName;
-    }
-
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setJobCard(String jobCard) {
+        this.jobCard = jobCard;
     }
 
     public String getAssignTo() {
@@ -56,4 +30,21 @@ public class TodayOrderStatus {
     public void setPayment(String payment) {
         this.payment = payment;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+
+    public TodayOrderStatus(String jobCard, String assignTo, String payment, String status) {
+        this.jobCard = jobCard;
+        this.assignTo = assignTo;
+        this.payment = payment;
+        this.status = status;
+    }
+
 }
