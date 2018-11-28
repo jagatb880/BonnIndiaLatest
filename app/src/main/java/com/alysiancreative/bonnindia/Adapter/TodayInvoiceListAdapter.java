@@ -44,20 +44,20 @@ public class TodayInvoiceListAdapter extends RecyclerView.Adapter<RecyclerView.V
         if (viewHolder instanceof TodaysInvoiceHeaderViewholder){
             TodaysInvoiceHeaderViewholder todaysInvoiceHeaderViewholder = (TodaysInvoiceHeaderViewholder) viewHolder;
             TodayInvoiceList todayInvoiceList =invoiceLists.get(i);
-            todaysInvoiceHeaderViewholder.txtBillNo.setText(todayInvoiceList.getBillNo());
-            todaysInvoiceHeaderViewholder.txtTotalAmount.setText(todayInvoiceList.getTotalAmount());
-            todaysInvoiceHeaderViewholder.txtTotalDiscount.setText(todayInvoiceList.getTotalDiscount());
-            todaysInvoiceHeaderViewholder.txtTotalTax.setText(todayInvoiceList.getTotalTax());
-            todaysInvoiceHeaderViewholder.txtBillAmount.setText(todayInvoiceList.getBillAmount());
+            todaysInvoiceHeaderViewholder.txtBillNo.setText("#"+todayInvoiceList.getBillno());
+            todaysInvoiceHeaderViewholder.txtTotalAmount.setText(""+todayInvoiceList.getTotalamount());
+            todaysInvoiceHeaderViewholder.txtTotalDiscount.setText(""+todayInvoiceList.getTotaldiscount());
+            todaysInvoiceHeaderViewholder.txtTotalTax.setText(""+todayInvoiceList.getTotaltax());
+            todaysInvoiceHeaderViewholder.txtBillAmount.setText(""+todayInvoiceList.getBillamount());
         }
         if (viewHolder instanceof TodaysInvoicListNormalViewholder){
             TodaysInvoicListNormalViewholder todaysInvoicListNormalViewholder = (TodaysInvoicListNormalViewholder) viewHolder;
             TodayInvoiceList todayOrderStatus =invoiceLists.get(i);
-            todaysInvoicListNormalViewholder.txtBillNo.setText(todayOrderStatus.getBillNo());
-            todaysInvoicListNormalViewholder.txtTotalAmount.setText(todayOrderStatus.getTotalAmount());
-            todaysInvoicListNormalViewholder.txtTotalDiscount.setText(todayOrderStatus.getTotalDiscount());
-            todaysInvoicListNormalViewholder.txtTotalTax.setText(todayOrderStatus.getTotalTax());
-            todaysInvoicListNormalViewholder.txtBillAmount.setText(todayOrderStatus.getBillAmount());
+            todaysInvoicListNormalViewholder.txtBillNo.setText("#"+todayOrderStatus.getBillno());
+            todaysInvoicListNormalViewholder.txtTotalAmount.setText(""+todayOrderStatus.getTotalamount());
+            todaysInvoicListNormalViewholder.txtTotalDiscount.setText(""+todayOrderStatus.getTotaldiscount());
+            todaysInvoicListNormalViewholder.txtTotalTax.setText(""+todayOrderStatus.getTotaltax());
+            todaysInvoicListNormalViewholder.txtBillAmount.setText(""+todayOrderStatus.getBillamount());
         }
     }
 

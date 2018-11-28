@@ -41,19 +41,19 @@ public class TodayOrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
-         if (viewHolder instanceof TodaysOrdrHeaderViewholder){
-             TodaysOrdrHeaderViewholder headerViewholder = (TodaysOrdrHeaderViewholder) viewHolder;
-             TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
-             headerViewholder.txtJobCard.setText(todayOrderStatus.getJobCard());
-             headerViewholder.txtAssignTo.setText(todayOrderStatus.getAssignTo());
-             headerViewholder.txtPayment.setText(todayOrderStatus.getPayment());
-             headerViewholder.txtStatus.setText(todayOrderStatus.getStatus());
-         }
+        if (viewHolder instanceof TodaysOrdrHeaderViewholder){
+            TodaysOrdrHeaderViewholder headerViewholder = (TodaysOrdrHeaderViewholder) viewHolder;
+            TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
+            headerViewholder.txtJobCard.setText("#"+todayOrderStatus.getComplainid());
+            headerViewholder.txtAssignTo.setText(todayOrderStatus.getAssigned_to());
+            headerViewholder.txtPayment.setText(""+todayOrderStatus.getPayment());
+            headerViewholder.txtStatus.setText(todayOrderStatus.getStatus());
+        }
         if (viewHolder instanceof TodaysOderNormalViewholder){
             TodaysOderNormalViewholder todaysOderNormalViewholder = (TodaysOderNormalViewholder) viewHolder;
             TodayOrderStatus todayOrderStatus =orderStatusArrayList.get(i);
-            todaysOderNormalViewholder.txtJobCard.setText(todayOrderStatus.getJobCard());
-            todaysOderNormalViewholder.txtAssignTo.setText(todayOrderStatus.getAssignTo());
+            todaysOderNormalViewholder.txtJobCard.setText("#"+todayOrderStatus.getComplainid());
+            todaysOderNormalViewholder.txtAssignTo.setText(todayOrderStatus.getAssigned_to());
             todaysOderNormalViewholder.txtPayment.setText(todayOrderStatus.getPayment());
             todaysOderNormalViewholder.txtStatus.setText(todayOrderStatus.getStatus());
         }

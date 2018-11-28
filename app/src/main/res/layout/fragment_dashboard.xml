@@ -63,10 +63,11 @@
                                 android:paddingLeft="4dp"
                                 android:paddingRight="4dp"
                                 android:scaleType="fitStart"
-                                android:text="10"
+                                android:text="0"
                                 android:textColor="#ffffffff"
                                 android:textSize="10sp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:id="@+id/txtComplainReceived"/>
                         </RelativeLayout>
 
                         <TextView
@@ -114,10 +115,11 @@
                                 android:paddingLeft="4dp"
                                 android:paddingRight="4dp"
                                 android:scaleType="fitStart"
-                                android:text="10"
+                                android:text="0"
                                 android:textColor="#ffffffff"
                                 android:textSize="10sp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:id="@+id/txtCompleted"/>
                         </RelativeLayout>
 
                         <TextView
@@ -164,10 +166,11 @@
                                 android:paddingLeft="4dp"
                                 android:paddingRight="4dp"
                                 android:scaleType="fitStart"
-                                android:text="10"
+                                android:text="0"
                                 android:textColor="#ffffffff"
                                 android:textSize="10sp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:id="@+id/txtPending"/>
                         </RelativeLayout>
 
                         <TextView
